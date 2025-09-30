@@ -1,0 +1,66 @@
+{
+	"categories": [
+		{"name": "Все" },
+		{"name": "Природа" },
+		{"name": "Горы" },
+		{"name": "Города" },
+		{"name": "Море" }
+	],
+	"collections": [
+		{
+			"cetegory": 2,
+			"name": "Красивая природа",
+			"photos": [
+				"https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg",
+				"https://images.pexels.com/photos/2174656/pexels-photo-2174656.jpeg",
+				"https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg",
+				"https://images.pexels.com/photos/2132126/pexels-photo-2132126.jpeg",
+				"https://images.pexels.com/photos/2178175/pexels-photo-2178175.jpeg"
+			]
+		},
+				{
+			"cetegory": 1,
+			"name": "Горы / отдых",
+			"photos": [
+				"https://images.pexels.com/photos/2253821/pexels-photo-2253821.jpeg",
+				"https://images.pexels.com/photos/2662086/pexels-photo-2662086.jpeg",
+				"https://images.pexels.com/photos/2108813/pexels-photo-2108813.jpeg",
+				"https://images.pexels.com/photos/238622/pexels-photo-238622.jpeg",
+				"https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg"
+			]
+		},
+				{
+			"cetegory": 3,
+			"name": "Города / архитектура",
+			"photos": [
+				"https://images.pexels.com/photos/2104742/pexels-photo-2104742.jpeg",
+				"https://images.pexels.com/photos/2104044/pexels-photo-2104044.jpeg",
+				"https://images.pexels.com/photos/2147487/pexels-photo-2147487.jpeg",
+				"https://images.pexels.com/photos/531602/pexels-photo-531602.jpeg",
+				"https://images.pexels.com/photos/3889855/pexels-photo-3889855.jpeg"
+			]
+		},
+				{
+			"cetegory": 4,
+			"name": "Путешествия по миру",
+			"photos": [
+				"https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg",
+				"https://images.pexels.com/photos/2169857/pexels-photo-2169857.jpeg",
+				"https://images.pexels.com/photos/3225528/pexels-photo-3225528.jpeg",
+				"https://images.pexels.com/photos/1658967/pexels-photo-1658967.jpeg",
+				"https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg"
+			]
+		},
+				{
+			"cetegory": 2,
+			"name": "Путешествия куда-то",
+			"photos": [
+				"https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg",
+				"https://images.pexels.com/photos/2253821/pexels-photo-2253821.jpeg",
+				"https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg",
+				"https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg",
+				"https://images.pexels.com/photos/1173777/pexels-photo-1173777.jpeg"
+			]
+		}
+	]
+}
