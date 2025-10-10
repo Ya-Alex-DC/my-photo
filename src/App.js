@@ -9,8 +9,6 @@ function App() {
 	const [value, setValue] = useState('')
 	const [page, setPage] = useState(1)
 
-			// https://6880dfedf1dcae717b63ce3a.mockapi.io/collections
-
 	useEffect(() => {
 		setIsLoading(true)
 		const category = filteres ? `cetegory=${filteres}` : '';
