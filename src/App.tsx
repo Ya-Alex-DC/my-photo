@@ -1,20 +1,21 @@
 import './App.css';
 import { Collection } from './collection';
 import { useState, useEffect } from "react";
+import { PhotosF } from './type';
 
 function App() {
-	const [isLoading, setIsLoading] = useState(true)
-	const [collection, setcollection] = useState([])
-	const [filteres, setFilteres] = useState(0)
-	const [value, setValue] = useState('')
-	const [page, setPage] = useState(1)
+	const [isLoading, setIsLoading] = useState<boolean>(true)
+	const [collection, setcollection] = useState<PhotosF[]>([])
+	const [filteres, setFilteres] = useState<number>(0)
+	const [value, setValue] = useState<string>('')
+	const [page, setPage] = useState<number>(1)
 
 	useEffect(() => {
 		setIsLoading(true)
 		const category = filteres ? `cetegory=${filteres}` : '';
 		fetch(`https://6880dfedf1dcae717b63ce3a.mockapi.io/collections?page=${page}&limit=3&${category}`)
 			.then(res => res.json())
-			.then((json) => {
+			.then((json: PhotosF[]) => {
 				setcollection(json)
 			}).catch(err => {
 				console.warn(err)
@@ -23,7 +24,7 @@ function App() {
 			.finally(() => setIsLoading(false))
 	}, [filteres, page])
 
-	const onChengeFilteres = (indx) => {
+	const onChengeFilteres = (indx: number): void => {
 		setFilteres(indx)
 	}
 
@@ -36,7 +37,7 @@ function App() {
 				<ul className='tags'>
 					{filter.map((e, indx) => <li key={indx} onClick={() => onChengeFilteres(indx)} className={filteres === indx ? 'active' : ''}>{e}</li>)}
 				</ul>
-				<input value={value} onChange={(e) => setValue(e.target.value)} className='searrch-input' placeholder='ввиедите текст'></input>
+				<input value={value} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)} className='searrch-input' placeholder='ввиедите текст'></input>
 			</div>
 			<div className='content'>
 				{isLoading ? <h2>Идет загрузка ....</h2> :

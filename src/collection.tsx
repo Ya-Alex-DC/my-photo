@@ -1,6 +1,9 @@
+interface CollectionProps  {
+	images: string[];
+	name: string;
+}
 
-
-export const Collection = ({ images, name }) => {
+export const Collection = ({ images, name }: CollectionProps ) => {
 	return (
 		<div className="collection">
 			<img className="collection__big" alt="item" src={images[0]}></img>
